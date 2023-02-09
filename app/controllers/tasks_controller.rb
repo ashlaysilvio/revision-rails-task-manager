@@ -15,6 +15,7 @@ class TasksController < ApplicationController
   end
   def edit
     @task = Task.find(params[:id])
+    edit_path
   end
   def update
     @task = Task.find(params[:id])
